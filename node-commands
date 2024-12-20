@@ -1,0 +1,62 @@
+#------------------------------------------------ Node and NPM ------------------------------------
+
+# update the package first
+sudo apt update
+
+# install node js 
+sudo apt install nodejs
+
+# install npm 
+sudo apt install npm
+
+#--------------------------------------------- NVM -------------------------------------------------
+
+# install curl 
+ sudo apt install curl
+ 
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+#------------------------------------------------ Vs code ------------------------------------------------
+
+# install vs code 
+sudo snap install --classic code
+
+#--------------------------------------- Dbeaver-------------------------------------------------
+# intall dbeaver (may be you will have to install jdk and jre)
+
+# install jdk 
+sudo apt-get install default-jdk
+
+# install jre 
+sudo apt-get install default-jre
+
+# step 0 for dbeaver
+wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
+
+# second step for dbeaver
+sudo dpkg -i dbeaver-ce_latest_amd64.deb
+
+# Third step for dbeaver
+sudo apt --fix-broken install
+
+# Now launch dbeaver
+dbeaver
+
+#-------------------------------------------- Redis --------------------------------------
+
+  # To install redis
+   sudo apt install redis-server
+
+  # To check redis version
+   redis-server --version
+
+  # To open redis config file 
+  sudo nano /etc/redis/redis.conf
+
+  # To start redis service 
+    sudo systemctl start redis
+
+# ---------------------------------------------- Docker --------------------------------------
+
+  # 

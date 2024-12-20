@@ -1,0 +1,34 @@
+ 
+ # Execute this command to download mongodb in your system
+ wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg --dearmor -o /usr/share/keyrings/mongodb-7.gpg
+
+#Ensure that the MongoDB repository is pointing to Ubuntu Jammy (22.04). If not, re-add it:--------
+
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-7.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+
+
+#Update Package Index
+sudo apt update
+
+
+#Install MongoDB
+sudo apt install -y mongodb-org
+
+
+#Start MongoDB Service
+sudo systemctl start mongod
+
+
+#Execute the mongo shell
+mongosh
+
+
+# Download Mongo compass
+  # step 1
+  wget https://downloads.mongodb.com/compass/mongodb-compass_1.44.5_amd64.deb
+  
+  # step 2
+  sudo apt install ./mongodb-compass_1.44.5_amd64.deb
+  
+  # step 3 (run compass)
+  mongodb-compass

@@ -1,0 +1,7 @@
+# To get the information of a software through command
+snap find softwareName
+
+# To change the password 
+sudo passwd
+
+
