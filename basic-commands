@@ -4,4 +4,7 @@ snap find softwareName
 # To change the password 
 sudo passwd
 
-
+# To see the content of a file 
+   nano fileName
+# To create a file
+   touch fileName
